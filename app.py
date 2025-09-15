@@ -1,4 +1,4 @@
-iimport streamlit as st
+import streamlit as st
 
 st.title("تطبيق تذكير الأدوية البسيط")
 
@@ -20,3 +20,4 @@ with st.form("add_medicine"):
 st.subheader("قائمة الأدوية")
 for i, med in enumerate(st.session_state.meds):
     st.write(f"{i+1}. {med['name']} - {med['doses']} جرعات في اليوم")
+
