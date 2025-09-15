@@ -4,9 +4,9 @@ import time as t
 import json
 import os
 
-st.set_page_config(page_title="تطبيق تذكير الأدوية", layout="centered")
+st.set_page_config(page_title="صحّتي - تطبيقك الصحي الذكي", layout="centered")
 
-st.title("💊 تطبيق تذكير الأدوية المتكامل")
+st.title("🩺 صحّتي - رفيقك الصحي الذكي")
 
 DATA_FILE = "medications_data.json"
 
@@ -106,3 +106,4 @@ if st.button("ابدأ العداد"):
         placeholder.warning(f"⏳ تبقى: {sec} ثانية")
         t.sleep(1)
     placeholder.success("🚨 انتهى الوقت! خذ الجرعة الآن.")
+
